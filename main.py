@@ -1,5 +1,6 @@
 import streamlit as st
 from PIL import Image
+from PIL.ImageFilter import *
 
 st.markdown("<h1 style='text-align: center;'>Image Editor</h1>", unsafe_allow_html=True)
 st.markdown("---", unsafe_allow_html=True)
@@ -24,5 +25,24 @@ if image:
     degree = st.number_input("Degree")
 
     st.markdown("<h2 style='text-align: center;'>Filters</h2>", unsafe_allow_html=True)
-    filters = st.selectbox("Filters", options=['Blur', 'Contour', 'Detail', 'Emboss', 'Sharpen', 'Smooth'])
+    filters = st.selectbox("Filters", options=['None', 'Blur', 'Contour', 'Detail', 'Emboss', 'Sharpen', 'Smooth'])
 
+    submit = st.button("Submit")
+    if submit:
+        edited = img.resize((width, height)).rotate(degree)
+        filtered = edited
+
+        if filter != "None":
+            if filter == "Blur":
+                filtered = edited.filter(BLUR)
+            elif filter == "Contour":
+                filtered = edited.filter(CONTOUR)
+            elif filter == "Detail":
+                filtered = edited.filter(DETAIL)
+            elif filter == "Emboss":
+                filtered = edited.filter(EMBOSS)
+            elif filter == "Sharpen":
+                filtered = edited.filter(SHARPEN)
+            elif filter == "Smooth":
+                filtered = edited.filter(SMOOTH)
+        st.image(filtered)
