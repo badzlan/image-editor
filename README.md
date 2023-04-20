@@ -1,7 +1,7 @@
 <p align="center"><a href="https://streamlit.io/" target="_blank"><img src="https://streamlit.io/images/brand/streamlit-logo-secondary-colormark-darktext.png" width="400" alt="Streamlit Logo"></a></p>
 
 # Project Overview
-Simple Image Editor Web App using Python Streamlit
+Image Editor Web App using Python Streamlit
 
 Project Link : https://image-editor.streamlit.app/
 
