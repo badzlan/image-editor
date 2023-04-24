@@ -38,5 +38,4 @@ streamlit run main.py
 ```
 
 ## Authors
-
 - [@badzlan](https://github.com/badzlan)
