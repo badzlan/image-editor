@@ -1,7 +1,7 @@
 <p align="center"><a href="https://streamlit.io/" target="_blank"><img src="https://streamlit.io/images/brand/streamlit-logo-secondary-colormark-darktext.png" width="400" alt="Streamlit Logo"></a></p>
 
-# Project Overview
-Simple Image Editor Web App using Python Streamlit
+## Project Overview
+Simple Image Editor Web Application using Python Streamlit
 
 Project Link : https://image-editor.streamlit.app/
 
@@ -20,7 +20,7 @@ git clone https://github.com/badzlan/image-editor.git
 ```
 or 
 #### Download the zip file
-![download zip](https://github.com/0x1m4o/Industry-Project/blob/main/public/img/image.png)
+<a href="https://github.com/badzlan/image-editor/archive/refs/heads/main.zip">![download zip](https://github.com/0x1m4o/Industry-Project/blob/main/public/img/image.png)</a>
 
 #### 2. Go to directory 
 ```
